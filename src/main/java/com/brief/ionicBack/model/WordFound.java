@@ -13,7 +13,7 @@ import java.util.Set;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-public class WordFound {
+public class  WordFound {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
