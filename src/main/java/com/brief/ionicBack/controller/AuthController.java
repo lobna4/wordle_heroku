@@ -64,6 +64,11 @@ public class AuthController {
                 userDetails.getEmail(),roles));
     }
 
+    @GetMapping("api/helloword")
+    public String getHelloword() {
+        return "helloword";
+    }
+
     @PostMapping("/api/auth/register")
     public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signupRequest){
         if (userRepository.existsByUsername(signupRequest.getUsername())){
