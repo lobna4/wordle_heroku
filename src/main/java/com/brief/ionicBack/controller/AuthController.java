@@ -64,7 +64,7 @@ public class AuthController {
                 userDetails.getEmail(),roles));
     }
 
-    @PostMapping(" /auth/register")
+    @PostMapping("/api/auth/register")
     public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signupRequest){
         if (userRepository.existsByUsername(signupRequest.getUsername())){
             return ResponseEntity
